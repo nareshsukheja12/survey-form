@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheets" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">OneMoreRep Survey Form</h1>
+    <p id="description">Thanks for taking out the time to help us improve</p>
+    <form id="survey-form" />
+      <fieldset>
+      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required />
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" required />
+      <label id="number-label" for="number">Age</label>
+      <input id="number" type="number" min="10" max="120" placeholder="Age"/>
+      </fieldset>
+      <fieldset>
+      <label for="dropdown">Which is your favourite program</label>
+      <select id="dropdown">
+        <option>push pull legs</option>
+        <option>pure bodybuilding</option>
+        <option>powerbuilding 2.0</option>
+      </select>
+      </fieldset>
+      <fieldset>
+      <label>Would you recommend freeCodeCamp to a friend?</label>
+      <label for="option-1"><input id="option-1" class="inline" name="recommendation" type="radio" value="definitely" />definitely</label>
+      <label for="option-2"><input id="option-2" class="inline" name="recommendation" type="radio" value="maybe" />maybe</label>
+      <label for="option-3"><input id="option-3" class="inline" name="recommendation" type="radio" value="not-sure" />not sure</label>
+      </fieldset>
+      <fieldset>
+        <label>What would you like to see improved?</label>
+        <label><input value="check-1" type="checkbox" />Calorie counter</label>
+        <label><input value="check-2" type="checkbox" />structure of the programs</label>
+        <label><input value="check-3" type="checkbox" />More Programs</label>
+      </fieldset>
+      <fieldset>
+        <label> Any comments or suggestions ?</label><textarea rows="6" cols="40"></textarea>
+      </fieldset>
+      <input id="submit" type="submit" />
+    </form>
+  </body>
+</html>
